@@ -40,3 +40,5 @@ group :test do
   gem 'rspec-activemodel-mocks'
   gem 'rspec-its'
 end
+gem 'rails-controller-testing', :git => 'git://github.com/rails/rails-controller-testing.git'
+gem 'draper'

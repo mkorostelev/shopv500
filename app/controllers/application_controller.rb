@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+  helper_method :resource, :collection
   def new
        initialize_resource
      end
@@ -19,4 +20,6 @@ class ApplicationController < ActionController::Base
      def destroy
        resource.destroy!
      end
+
+
 end
